@@ -1,0 +1,19 @@
+.top-bar-mobile{
+    background-color: #0B0B0B;
+    height:4.5em;
+}
+.bm-burger-button{
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    display: flex;
+    right: 1em;
+    top: 1em;
+}
+
+.nav-mobile{
+    width: 20%;
+    top: 4.4em;
+    height: 100vh!important;
+    background: #0B0B0B;
+}
