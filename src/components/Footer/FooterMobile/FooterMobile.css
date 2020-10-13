@@ -1,0 +1,16 @@
+.nav-footer-mobile-link{
+    color: #6CC6D7;
+    font-weight: bolder;
+}
+
+.company-sentence{
+    font-size: 0.4em;
+}
+
+@media(min-width: 768px){
+    .nav-footer-mobile-link{
+        color: #6CC6D7;
+        font-weight: bolder;
+        font-size: 2.6em;
+    }
+}

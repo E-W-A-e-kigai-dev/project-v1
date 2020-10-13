@@ -1,0 +1,25 @@
+.card-info{
+    border: 3px dashed #6CC6D7;
+}
+
+.high-price{
+    background-color: #6CC6D7;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.5em;
+    width:50%;
+    padding-bottom:50%;
+    border-radius:50%;
+    line-height: 0.65em;
+}
+
+.price-supp{
+    position:absolute;
+    top:35%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+.low-text{
+    font-size: 0.4em;
+}

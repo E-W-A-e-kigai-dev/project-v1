@@ -33,19 +33,19 @@ class NavbarMobile extends Component {
                         right
                     >
                         <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-5' to="/" eventKey="/">Accueil</Nav.Link>
-                        <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-3' to="/prestations" eventKey="/carte">La Carte</Nav.Link>
+                        <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-3' to="/carte" eventKey="/carte">La Carte</Nav.Link>
                         <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-3' to="/contact" eventKey="/contact">Nous contacter</Nav.Link>
                         <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-3' to="/apropos" eventKey="/apropos">A Propos</Nav.Link>
-                        <div className="card card-menu mx-auto">
+                        <div className="card card-menu mt-3 mx-auto">
                             <div className="card-title text-center activities-title">
                                 <h2><u>HORAIRES</u></h2>
                             </div>
-                            <div className="card-body mx-auto card-contact">
-                                Du mardi au vendredi :<br/>
+                            <div className="card-body mx-auto card-horaires">
+                                <u>Du Mardi au Vendredi :</u><br/>
                                 MIDI: 11h - 15h<br/>
                                 SOIR: 18h - 23h<br/><br/>
-                                Samedi : 11h - minuit<br/><br/>
-                                Dimanche : 18h - 22h
+                                <u>Samedi :</u> 11h - minuit<br/><br/>
+                                <u>Dimanche :</u> 18h - 22h
                             </div>
                         </div>
                         <p className="maker mt-3 text-center">Made by e-kigaï-dev © 2020 - Tous droits réservés</p>

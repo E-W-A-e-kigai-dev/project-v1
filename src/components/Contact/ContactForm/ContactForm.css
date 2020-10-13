@@ -1,0 +1,46 @@
+.contact-input, .textarea-contact{
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.contact-label{
+    font-size: 1.8em;
+}
+
+.errors-message{
+    color: darkorange;
+    font-size: 0.65em;
+    font-family: Arial, sans-serif;
+}
+
+.btn-submit{
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    color: #6CC6D7;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.btn-submit:hover, .btn-submit:focus{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    color: #6CC6D7;
+    font-weight: bolder;
+}
+
+@media(min-width: 768px){
+    .btn-submit{
+        font-size: 1.7em;
+        width: 30%;
+    }
+}
+
+@media(min-width: 1024px){
+    .contact-input, .textarea-contact{
+        font-family: Arial, sans-serif;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 15px;
+    }
+}

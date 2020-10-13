@@ -1,0 +1,93 @@
+.mobile-header-background{
+    height: 31em;
+}
+
+.icon-phone{
+    width: 10%;
+    margin-top: -3px;
+}
+
+.btn-call, .btn-call:focus, .btn-call:hover{
+    color: white;
+    font-weight: bolder;
+    border: 3px solid white;
+    border-radius: 25px;
+    background-color: #6CC6D7;
+    width: 60%;
+    padding: 0.5em;
+    margin-top: 50%;
+    font-size: 1.5em;
+}
+
+.down-icon {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    margin-top: 12em;
+    width: 15%;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+
+@media(min-width: 375px){
+    .mobile-header-background{
+        height: 38em;
+    }
+
+    .down-icon{
+        margin-top: 15em;
+    }
+}
+
+@media(min-width: 375px) and (min-height: 812px){
+    .mobile-header-background{
+        height: 47em;
+    }
+
+    .down-icon{
+        margin-top: 23em;
+    }
+
+    .btn-call, .btn-call:focus, .btn-call:hover{
+        margin-top: 75%;
+    }
+}
+
+@media(min-width: 414px){
+    .mobile-header-background{
+        height: 42em;
+    }
+
+    .down-icon{
+        margin-top: 16em;
+    }
+}
+
+@media(min-width: 414px)and (min-height: 896px){
+    .mobile-header-background{
+        height: 52em;
+    }
+
+    .down-icon{
+        margin-top: 23em;
+    }
+}
+
+@media(min-width: 768px) {
+    .mobile-header-background{
+        height: 60em;
+    }
+
+    .down-icon{
+        margin-top: 22em;
+    }
+
+    .btn-call, .btn-call:focus, .btn-call:hover{
+        margin-top: 55%;
+    }
+}

@@ -1,0 +1,14 @@
+.desktop-header-background{
+    height: 42em;
+}
+
+.card-main-title-desk{
+    background-color: transparent;
+    border: 3px dashed #6CC6D7;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.main-title-desk{
+    background-color: transparent;
+}
