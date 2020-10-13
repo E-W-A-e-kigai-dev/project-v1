@@ -54,7 +54,7 @@ class FriesCard extends Component {
             }
         ];
 
-        const listPages = fries.map(frie =>(
+        const listFries = fries.map(frie =>(
             <div key={frie.id}>
                 <Col xs={12}>
                     <h3 className="product-name">- {frie.name}</h3>
@@ -92,7 +92,7 @@ class FriesCard extends Component {
             <>
                 <div className="container">
                     <Row>
-                        {listPages}
+                        {listFries}
                     </Row>
                 </div>
             </>

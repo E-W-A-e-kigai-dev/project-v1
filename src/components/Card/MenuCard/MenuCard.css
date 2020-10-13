@@ -1,0 +1,22 @@
+.menu-price{
+    background-color: #6CC6D7;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    width:80%;
+    padding-bottom:80%;
+    border-radius:50%;
+}
+
+.menu-price-content{
+    position:absolute;
+    top:50%;
+    left:43%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+
+.plus-logo{
+    font-size: 3em;
+    font-weight: bolder;
+}
