@@ -15,6 +15,7 @@ import Homepage from "./components/Homepage/Homepage";
 import NotFound from "./components/NotFound/NotFound";
 import FooterMobile from "./components/Footer/FooterMobile/FooterMobile";
 import FooterDesktop from "./components/Footer/FooterDesktop/FooterDesktop";
+import Contact from "./components/Contact/Contact";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/carte" component={Card}/>
                     <Route exact path="/apropos" component={About} />
+                    <Route exact path="/contact" component={Contact}/>
                     <Route exact path="/" component={Homepage} />
                     <Route path="*" component={NotFound} />
                 </Switch>

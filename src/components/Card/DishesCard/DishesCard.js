@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Card, Col, Row} from "react-bootstrap";
 
 class DishesCard extends Component {
     render() {
@@ -95,9 +96,34 @@ class DishesCard extends Component {
                 price: '7€50'
             }
         ]
+
+        const listDishes = dishes.map(dish=>(
+            <Col className="mt-3" xs={12} key={dish.id}>
+                <Card className="border-0">
+                    <Row>
+                        <Col className="menu-title mt-1" xs={8}>
+                            <h3 className="product-name">- {dish.name}</h3>
+                        </Col>
+                        <Col className="menu-price-logo" xs={4}>
+                            <div className="menu-price text-black"><span className="menu-price-content">{dish.price}</span></div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="menu-description" xs={10}>
+                            <u className="menu-type">{dish.contentType}</u><br/>
+                            <p className="menu-content">{dish.content}</p>
+                        </Col>
+                    </Row>
+                </Card>
+            </Col>
+        ))
         return (
             <>
-
+                <div className="container">
+                    <Row>
+                        {listDishes}
+                    </Row>
+                </div>
             </>
         );
     }

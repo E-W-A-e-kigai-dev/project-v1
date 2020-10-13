@@ -54,7 +54,7 @@ class Homepage extends Component {
                         </Col>
                     </Col>
                 </Row>
-                <Row className="mt-5 center">
+                <Row className="mt-5 mb-5 center">
                     <Col className="center" xs={8} md={3}>
                         <img className="find-img w-100" alt="carte pour situer french fries" src={find}/>
                     </Col>

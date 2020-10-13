@@ -23,7 +23,7 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <div className="contact-section mt-5">
+                <div className="contact-section ">
                     <div className="center col-12">
                         <h2 className="section-title text-center">Contactez-nous</h2>
                     </div>

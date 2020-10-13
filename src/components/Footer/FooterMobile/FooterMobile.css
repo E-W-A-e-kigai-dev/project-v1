@@ -7,6 +7,10 @@
     font-size: 0.4em;
 }
 
+.footer-section{
+    border-top: 2px solid #6CC6D7;
+}
+
 @media(min-width: 768px){
     .nav-footer-mobile-link{
         color: #6CC6D7;

@@ -11,7 +11,7 @@ class FooterMobile extends Component {
     render() {
         return (
             <>
-                <footer>
+                <footer className="footer-section">
                     <Row className="footer-mobile-section row p-0">
                         <Col className="mt-2" xs={4}>
                             <img className="footer-logo w-100" alt="AB-ramonage logo" src={logo}/>
