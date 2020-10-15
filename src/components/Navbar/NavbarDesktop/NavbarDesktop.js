@@ -10,12 +10,12 @@ class NavbarDesktop extends Component {
         return (
             <>
                 <Navbar className="p-0 top-bar-desktop" sticky="top">
-                    <Col xs={4} className="">
+                    <Col xs={3} xl={4} className="">
                         <Navbar.Brand as={Link} to="/">
                             <img className="nav-desk-logo ml-2" src={logo} alt="ab-ramonage logo"/>
                         </Navbar.Brand>
                     </Col>
-                    <Col xs={8}>
+                    <Col xs={9} xl={8}>
                         <Nav
                             className="nav-desktop ml-5"
                             activeKey="/"

@@ -6,12 +6,12 @@
 
 .nav-desktop-item{
     color: #6CC6D7!important;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .nav-desktop-item:hover{
     color: white!important;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .nav-desktop-item:focus{
@@ -22,7 +22,7 @@
 }
 
 .btn-nav-desk{
-    width: 17em;
+    width: 19em;
     border: 2px solid rgba(108,198,215,1);
     border-radius: 22px;
 }
@@ -35,4 +35,45 @@
 
 .nav-desk-logo{
     width: 50%;
+}
+
+@media(min-width: 1680px){
+    .top-bar-desktop{
+        height: 6em;
+        background-color: #0B0B0B;
+        position: sticky;
+    }
+
+    .nav-desktop-item{
+        color: #6CC6D7!important;
+        font-size: 1.8em;
+    }
+
+    .nav-desktop-item:hover{
+        color: white!important;
+        font-size: 1.8em;
+    }
+
+    .nav-desktop-item:focus{
+        font-size: 1.8em;
+        color: white!important;
+        box-shadow: 0 0 0 0.2rem rgba(255,255,255,1);
+        border-radius: 22px;
+    }
+
+    .btn-nav-desk{
+        width: 17em;
+        border: 2px solid rgba(108,198,215,1);
+        border-radius: 22px;
+    }
+
+    .btn-nav-desk:hover{
+        width: 17em;
+        border: 2px solid rgba(255,255,255,1);
+        border-radius: 22px;
+    }
+
+    .nav-desk-logo{
+        width: 50%;
+    }
 }
