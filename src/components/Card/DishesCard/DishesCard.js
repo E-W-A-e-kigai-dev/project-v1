@@ -98,7 +98,7 @@ class DishesCard extends Component {
         ]
 
         const listDishes = dishes.map(dish=>(
-            <Col className="mt-3" xs={12} key={dish.id}>
+            <Col className="mt-5 mb-3" xs={12} key={dish.id}>
                 <Card className="border-0">
                     <Row>
                         <Col className="menu-title mt-1" xs={8}>
@@ -108,7 +108,7 @@ class DishesCard extends Component {
                             <div className="menu-price text-black"><span className="menu-price-content">{dish.price}</span></div>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="menu-section-content">
                         <Col className="menu-description" xs={10}>
                             <u className="menu-type">{dish.contentType}</u><br/>
                             <p className="menu-content">{dish.content}</p>

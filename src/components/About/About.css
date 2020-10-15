@@ -1,0 +1,27 @@
+.about-presentation-text{
+    color: #0B0B0B;
+}
+
+.about-separator-banner{
+    height: 14em;
+}
+
+.about-horaires-card{
+    background-color: #6CC6D7;
+    border-radius: 25px;
+    color: white;
+    padding: 1em;
+}
+
+.card-fb-publication{
+    border-color: #6CC6D7;
+    border-radius: 25px;
+}
+
+.carousel .slide{
+    background-color: transparent!important;
+}
+
+.carousel-arrow{
+    width: 80%
+}

@@ -1,0 +1,21 @@
+.separator-title-container * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+
+.half-separator-h{
+    height: 1px;
+    min-width: 50px;
+    background: #6CC6D7;
+}
+@media (min-width: 1200px){
+    .half-separator-h{
+        height: 1px;
+        width: 300px;
+        background: #6CC6D7;
+    }
+}

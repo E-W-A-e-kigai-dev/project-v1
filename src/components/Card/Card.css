@@ -1,3 +1,9 @@
 .card-separator-banner{
     height: 11em;
 }
+
+@media(min-width: 1024px){
+    .card-separator-banner{
+        height: 50em;
+    }
+}

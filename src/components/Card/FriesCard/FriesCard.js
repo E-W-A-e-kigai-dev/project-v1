@@ -55,37 +55,37 @@ class FriesCard extends Component {
         ];
 
         const listFries = fries.map(frie =>(
-            <div key={frie.id}>
+            <Col xs={12} key={frie.id}>
                 <Col xs={12}>
                     <h3 className="product-name">- {frie.name}</h3>
                 </Col>
                <Row>
                    <Col xs={4}>
-                       <Card className="card-product">
+                       <Card className="card-product center">
                            <CardImg src={small_price} alt="ecusson prix petite taille"/>
-                           <Card.ImgOverlay>
-                               <Card.Title className="price-card mx-auto mt-2 center text-white">{frie.lowPrice}</Card.Title>
+                           <Card.ImgOverlay className="center">
+                               <Card.Title className="price-card text-white">{frie.lowPrice}</Card.Title>
                            </Card.ImgOverlay>
                        </Card>
                    </Col>
                    <Col xs={4}>
-                       <Card className="card-product">
+                       <Card className="card-product center">
                            <CardImg className="price-img" src={medium_price} alt="ecusson prix taille moyenne"/>
-                           <Card.ImgOverlay>
-                               <Card.Title className="price-card mx-auto mt-2 text-white">{frie.mediumPrice}</Card.Title>
+                           <Card.ImgOverlay className="center">
+                               <Card.Title className="price-card mt-2 text-white">{frie.mediumPrice}</Card.Title>
                            </Card.ImgOverlay>
                        </Card>
                    </Col>
                    <Col xs={4}>
-                       <Card className="card-product">
+                       <Card className="card-product center">
                            <CardImg src={high_price} alt="ecusson prix grande taille"/>
-                           <Card.ImgOverlay>
-                               <Card.Title className="price-card mx-auto mt-2 text-white">{frie.highPrice}</Card.Title>
+                           <Card.ImgOverlay className="center">
+                               <Card.Title className="price-card mt-2 text-white">{frie.highPrice}</Card.Title>
                            </Card.ImgOverlay>
                        </Card>
                    </Col>
                </Row>
-            </div>
+            </Col>
         ))
 
         return (

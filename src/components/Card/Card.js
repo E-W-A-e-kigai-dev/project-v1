@@ -9,6 +9,7 @@ import fries_banner_bg from "../../img/images/fries-card-bg.jpg";
 import menus_banner_bg from '../../img/images/menus-card-bg.jpg';
 import DishesCard from "./DishesCard/DishesCard";
 import Contact from "../Contact/Contact";
+import SeparatorTitle from "../SeparatorTitle/SeparatorTitle";
 
 class Card extends Component {
 
@@ -18,7 +19,7 @@ class Card extends Component {
             <>
                 <div className="fries-section">
                     <div className="center col-12">
-                        <h2 className="section-title text-center">Nos frites</h2>
+                        <SeparatorTitle title="Nos frites"/>
                     </div>
                     <CardInfo/>
                     <FriesCard/>
@@ -33,9 +34,9 @@ class Card extends Component {
                     className="card-separator-banner mt-3">
 
                 </div>
-                <div className="menu-section">
+                <div className="menu-section mb-5">
                     <div className="center col-12">
-                        <h2 className="section-title text-center">Nos Menus</h2>
+                        <SeparatorTitle title="Nos Menus"/>
                     </div>
                     <CardInfo/>
                     <MenuCard/>
@@ -52,7 +53,7 @@ class Card extends Component {
                 </div>
                 <div className="dishes-section">
                     <div className="center col-12">
-                        <h2 className="section-title text-center">Sans frites</h2>
+                        <SeparatorTitle title="Sans frites"/>
                     </div>
                     <CardInfo/>
                     <DishesCard/>
