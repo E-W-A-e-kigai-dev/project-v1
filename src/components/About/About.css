@@ -25,3 +25,29 @@
 .carousel-arrow{
     width: 80%
 }
+.right-arrow{
+    float: right;
+}
+
+@media(min-width: 1024px){
+    .about-separator-banner{
+        height: 34em;
+    }
+
+    .about-presentation-text{
+        color: #0B0B0B;
+        font-size: 3em;
+    }
+    .horaire-section{
+        font-size: 2em;
+    }
+    .carousel-arrow{
+        width: 40%;
+    }
+    .fb-publication-content{
+        font-size: 2em;
+    }
+    .fb-publication-title{
+        font-size: 2em;
+    }
+}

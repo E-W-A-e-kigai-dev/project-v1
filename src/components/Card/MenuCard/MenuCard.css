@@ -21,6 +21,47 @@
     font-weight: bolder;
 }
 
+@media(min-width: 768px){
+    .menu-content{
+        font-size: 2em;
+    }
+    .product-name{
+        font-size: 3.5em;
+    }
+    .standard-menu{
+        font-size: 2em;
+    }
+    .menu-price-logo{
+        width: 80%;
+    }
+    .menu-type{
+        font-size: 2em;
+    }
+    .plus-logo{
+        font-size: 5em;
+        font-weight: bolder;
+    }
+    .menu-price{
+        background-color: #6CC6D7;
+        color: white;
+        font-weight: bolder;
+        font-size: 3em;
+        width:50%;
+        padding-bottom:50%;
+        border-radius:50%;
+    }
+    .menu-section-content{
+        margin-top: -2em;
+    }
+    .menu-price-content{
+        position:absolute;
+        top:50%;
+        left:28%;
+        transform: translate(-50%, -50%);
+        margin:0;
+    }
+}
+
 @media(min-width: 1024px){
     .menu-content{
         font-size: 2em;

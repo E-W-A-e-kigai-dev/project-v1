@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Resto-v1",
+  "name": "Application restaurant version 1.0",
+  "author": "EA-studio",
   "icons": [
     {
       "src": "favicon.ico",

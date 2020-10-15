@@ -110,7 +110,7 @@ class DishesCard extends Component {
                     </Row>
                     <Row className="menu-section-content">
                         <Col className="menu-description" xs={10}>
-                            <u className="menu-type">{dish.contentType}</u><br/>
+                            <u className="menu-type">{dish.contentType} :</u><br/>
                             <p className="menu-content">{dish.content}</p>
                         </Col>
                     </Row>

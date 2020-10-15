@@ -64,7 +64,7 @@ class MenuCard extends Component {
                     </Row>
                     <Row className="menu-section-content">
                         <Col className="menu-description" xs={6}>
-                            <u className="menu-type">{menu.contentType}</u><br/>
+                            <u className="menu-type">{menu.contentType} :</u><br/>
                             <p className="menu-content">{menu.content}</p>
                         </Col>
                         <Col className="plus-logo mt-4" xs={1}>

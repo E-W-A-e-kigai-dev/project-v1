@@ -57,11 +57,11 @@ class About extends Component {
                         <Col className="center" xs={12}>
                             <h2 className="section-title text-center">Notre restaurant</h2>
                         </Col>
-                        <Col className="center" xs={10}>
+                        <Col className="center" xs={10}  md={6}>
                             <img className="front-img rounded w-100" src={shop_front} alt="facade restaurant french fries"/>
                         </Col>
                     </Row>
-                    <Row className='mt-3'>
+                    <Row className='mt-3 mt-md-5'>
                         <Col xs={2} xl={3} className="left-quotes">
                             <img className="icon-quote icon-quote-left" src={left_quote} alt="guillemets gauche"/>
                         </Col>
@@ -89,24 +89,24 @@ class About extends Component {
                 </div>
                 <div className="open-hours-section">
                     <Row className="center">
-                        <Col className="about-horaires-card mt-5 mb-5" xs={10}>
-                            <Row>
+                        <Col className="about-horaires-card mt-5 mb-5" xs={10} md={6}>
+                            <Row className="center">
                                 <Col className="center" xs={12}>
-                                    <h2 className="section-title text-center">Nos horaires</h2>
+                                    <h2 className="section-title mt-2 mb-2 text-center">Nos horaires</h2>
                                 </Col>
-                                <Col xs={12}>
+                                <Col className="horaire-section" xs={12} md={{span:8 ,offset:2}}>
                                     <p>
                                         <u>Mardi / Mercredi / Jeudi / Vendredi</u> :<br/>
                                         MIDI : 11h - 15h.  SOIR : 18h - 23h
                                     </p>
                                 </Col>
-                                <Col xs={12}>
+                                <Col className="horaire-section" xs={12} md={{span:8 ,offset:2}}>
                                     <p>
                                         <u>Samedi </u>:<br/>
                                         Journée continue 11h - minuit
                                     </p>
                                 </Col>
-                                <Col xs={12}>
+                                <Col className="horaire-section" xs={12} md={{span:8 ,offset:2}}>
                                     <p>
                                         <u>Dimanche </u>:<br/>
                                         Fermé le midi, ouvert le soir 18h - 22h<br/>
@@ -127,6 +127,8 @@ class About extends Component {
                         </Col>
                         <Col xs={8}>
                             <Carousel
+                                showStatus={false}
+                                showArrows={false}
                                 showThumbs={false}
                                 autoPlay={this.state.autoPlay}
                                 selectedItem={this.state.currentSlide}
@@ -135,45 +137,45 @@ class About extends Component {
                             >
 
                                     <Card className="card-fb-publication">
-                                        <Card.Title>
+                                        <Card.Title className="fb-publication-title">
                                             Publication du 11/10/2020
                                         </Card.Title>
                                         <Card.Img alt="publication facebook" src={fb_publi_one}/>
-                                        <Card.Body>
+                                        <Card.Body className="fb-publication-content">
                                             Fermeture estivale durant le mois d’août, on se retrouve pour la rentrée
                                         </Card.Body>
                                     </Card>
                                     <Card className="card-fb-publication">
-                                        <Card.Title>
+                                        <Card.Title className="fb-publication-title">
                                             Publication du 11/10/2020
                                         </Card.Title>
                                         <Card.Img alt="publication facebook" src={fb_publi_one}/>
-                                        <Card.Body>
+                                        <Card.Body className="fb-publication-content">
                                             Fermeture estivale durant le mois d’août, on se retrouve pour la rentrée
                                         </Card.Body>
                                     </Card>
                                     <Card className="card-fb-publication">
-                                        <Card.Title>
+                                        <Card.Title className="fb-publication-title">
                                             Publication du 11/10/2020
                                         </Card.Title>
                                         <Card.Img alt="publication facebook" src={fb_publi_one}/>
-                                        <Card.Body>
+                                        <Card.Body className="fb-publication-content">
                                             Fermeture estivale durant le mois d’août, on se retrouve pour la rentrée
                                         </Card.Body>
                                     </Card>
                                     <Card className="card-fb-publication">
-                                        <Card.Title>
+                                        <Card.Title className="fb-publication-title">
                                             Publication du 11/10/2020
                                         </Card.Title>
                                         <Card.Img alt="publication facebook" src={fb_publi_one}/>
-                                        <Card.Body>
+                                        <Card.Body className="fb-publication-content">
                                             Fermeture estivale durant le mois d’août, on se retrouve pour la rentrée
                                         </Card.Body>
                                     </Card>
                             </Carousel>
                         </Col>
                         <Col xs={2} >
-                            <img className="carousel-arrow" onClick={this.next} src={right_arrow} alt="flèche vers la gauche"/>
+                            <img className="carousel-arrow right-arrow" onClick={this.next} src={right_arrow} alt="flèche vers la gauche"/>
                         </Col>
                     </Row>
                 </div>

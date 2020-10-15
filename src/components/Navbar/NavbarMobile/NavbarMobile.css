@@ -20,23 +20,25 @@
 
 .nav-mobile-link{
     color: #6CC6D7;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bolder;
 }
 
 .btn-menu{
     width: 80%;
-    margin-left: 0.75em;
+    margin-left: 0.9em;
     box-shadow: 0 0 0 0.2rem rgba(108, 198, 215,1);
     border-radius: 15px!important;
 }
 
 .btn-menu:focus{
     width: 80%;
-    margin-left: 0.75em;
+    margin-left: 0.9em;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255,1);
 }
-
+.activities-title{
+    font-size: 1.4em!important;
+}
 .bm-overlay{
     top: 4.5em;
     left:0;
@@ -44,7 +46,7 @@
 
 .card-menu{
     width: 80%;
-    border: 3px solid rgba(108, 198, 215,1);
+    border: 3px dashed rgba(108, 198, 215,1);
     border-radius: 15px;
     background-color: transparent;
 }
@@ -54,7 +56,26 @@
 }
 
 .card-horaires{
-    font-size: 1.3em;
+    font-size: 1.1em;
+    padding: 0.2em!important;
+}
+
+@media(min-width: 375px){
+    .card-horaires{
+        font-size: 1.2em;
+    }
+    .nav-mobile-link{
+        color: #6CC6D7;
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
+    .btn-menu{
+        width: 80%;
+        margin-left: 0.75em;
+        box-shadow: 0 0 0 0.2rem rgba(108, 198, 215,1);
+        border-radius: 15px!important;
+    }
 }
 
 @media(min-width: 768px){

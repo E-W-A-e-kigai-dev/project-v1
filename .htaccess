@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+</IfModule>
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+       FileEtag none
+       Header unset Etag
+</FilesMatch>
+ExpiresActive on
+ExpiresByType image/jpg "access plus 4 days"
+ExpiresByType image/gif "access plus 7 days"
+ExpiresByType image/jpeg "access plus 4 days"
+ExpiresByType image/png "access plus 4 days"
+ExpiresByType image/x-icon "access plus 7 days"
+ExpiresByType text/css "access plus 48 hours"
+ExpiresByType application/javascript "access plus 48 hours"
+ExpiresByType application/x-javascript "access plus 48 hours"
+ExpiresByType application/x-shockwave-flash "access plus 48 hours"
+ExpiresDefault "access plus 1 days"

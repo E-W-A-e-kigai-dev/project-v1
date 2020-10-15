@@ -37,8 +37,8 @@ class NavbarMobile extends Component {
                         <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-3' to="/contact" eventKey="/contact">Nous contacter</Nav.Link>
                         <Nav.Link onClick={closeMenu} as={Link} className='nav-mobile-link btn btn-menu text-center mt-3' to="/apropos" eventKey="/apropos">A Propos</Nav.Link>
                         <div className="card card-menu mt-3 mx-auto">
-                            <div className="card-title text-center activities-title">
-                                <h2><u>HORAIRES</u></h2>
+                            <div className="card-title text-center">
+                                <h2 className="activities-title"><u>HORAIRES</u></h2>
                             </div>
                             <div className="card-body mx-auto card-horaires">
                                 <u>Du Mardi au Vendredi :</u><br/>

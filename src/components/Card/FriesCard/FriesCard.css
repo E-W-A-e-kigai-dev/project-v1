@@ -20,6 +20,23 @@
     margin-left: 0.4em;
 }
 
+@media(min-width: 768px){
+
+    .price-img{
+        width: 107%;
+    }
+
+    .product-name{
+        font-size: 3em;
+    }
+
+    .price-card{
+        font-size: 4em;
+        margin-top: 0.75em!important;
+        margin-left: 0.3em;
+    }
+}
+
 @media(min-width: 1024px){
 
     .price-img{
