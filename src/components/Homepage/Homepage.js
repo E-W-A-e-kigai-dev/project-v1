@@ -9,7 +9,7 @@ import right_quote from '../../img/icones/right-quote.svg';
 import banner_bg from '../../img/background/separator-homepage-bg.jpg';
 import shop_front from '../../img/images/front.jpg';
 import find from '../../img/images/find.png';
-import Contact from "../Contact/Contact";
+import ContactForm from "../Contact/ContactForm/ContactForm";
 
 class Homepage extends Component {
     componentDidMount() {
@@ -66,7 +66,7 @@ class Homepage extends Component {
                         </p>
                     </Col>
                 </Row>
-                <Contact/>
+                <ContactForm/>
             </>
         );
     }

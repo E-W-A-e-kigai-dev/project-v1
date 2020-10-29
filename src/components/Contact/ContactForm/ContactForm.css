@@ -9,6 +9,11 @@
     font-size: 1.8em;
 }
 
+.contact-section{
+    background-color: #6CC6D7;
+    color: white;
+}
+
 .errors-message{
     color: darkorange;
     font-size: 0.65em;

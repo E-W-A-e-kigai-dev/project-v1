@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 
 import './Contact.css';
 
@@ -10,16 +9,6 @@ class Contact extends Component {
         window.scrollTo(0,0);
     }
 
-    handleEnvoiMail = (message) =>{
-        axios.post("http://localhost/Client-project/server-ab-ramonage/front/sendMessage", message)
-            .then(res => {
-                console.log(res);
-                this.props.history.push('/');
-            })
-            .catch(error=>{
-                console.log(error)
-            });
-    }
     render() {
         return (
             <>
@@ -28,7 +17,7 @@ class Contact extends Component {
                         <h2 className="section-title text-center">Contactez-nous</h2>
                     </div>
                     <div className="col-12">
-                        <ContactForm sendMail={this.handleEnvoiMail}/>
+                        <ContactForm/>
                     </div>
                 </div>
             </>

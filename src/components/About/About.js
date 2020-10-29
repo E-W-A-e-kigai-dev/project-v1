@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Row, Col, Card} from "react-bootstrap";
 import { Carousel } from 'react-responsive-carousel';
+import ContactForm from "../Contact/ContactForm/ContactForm";
+
 
 import './About.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -14,7 +16,7 @@ import fb_publi_one from '../../img/images/facebook-1.jpg';
 import left_arrow from '../../img/images/left-chevron.svg';
 import right_arrow from '../../img/images/right-chevron.svg';
 
-import Contact from "../Contact/Contact";
+
 
 class About extends Component {
 
@@ -179,7 +181,7 @@ class About extends Component {
                         </Col>
                     </Row>
                 </div>
-                <Contact/>
+                <ContactForm />
             </>
         );
     }

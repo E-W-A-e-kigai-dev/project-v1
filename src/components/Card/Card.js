@@ -8,7 +8,7 @@ import MenuCard from './MenuCard/MenuCard';
 import fries_banner_bg from "../../img/images/fries-card-bg.jpg";
 import menus_banner_bg from '../../img/images/menus-card-bg.jpg';
 import DishesCard from "./DishesCard/DishesCard";
-import Contact from "../Contact/Contact";
+import ContactForm from "../Contact/ContactForm/ContactForm";
 import SeparatorTitle from "../SeparatorTitle/SeparatorTitle";
 
 class Card extends Component {
@@ -58,7 +58,7 @@ class Card extends Component {
                     <CardInfo/>
                     <DishesCard/>
                 </div>
-                <Contact/>
+                <ContactForm/>
             </>
         );
     }
