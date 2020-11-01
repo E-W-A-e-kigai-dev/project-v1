@@ -15,7 +15,7 @@
 }
 
 .nav-desktop-item:focus{
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: white!important;
     box-shadow: 0 0 0 0.2rem rgba(255,255,255,1);
     border-radius: 22px;
@@ -28,7 +28,7 @@
 }
 
 .btn-nav-desk:hover{
-    width: 17em;
+    width: 19em;
     border: 2px solid rgba(255,255,255,1);
     border-radius: 22px;
 }

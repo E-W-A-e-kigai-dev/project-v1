@@ -23,7 +23,7 @@ class FooterMobile extends Component {
                                     <Nav.Link as={Link} className='nav-footer-mobile-link text-center mt-3 p-0' to="/carte" eventKey="/carte">- La Carte</Nav.Link>
                                 </Col>
                                 <Col xs={6} className="p-0">
-                                    <Nav.Link as={Link} className='nav-footer-mobile-link text-center mt-1 p-0' to="/apropos" eventKey="/apropos">- Nous contacter</Nav.Link>
+                                    <Nav.Link as={Link} className='nav-footer-mobile-link text-center mt-1 p-0' to="/apropos" eventKey="/apropos">- A propos</Nav.Link>
                                     <Nav.Link as={Link} className='nav-footer-mobile-link text-center mt-3 p-0' to="/contact" eventKey="/contact">- Nous contacter</Nav.Link>
                                 </Col>
                             </Nav>

@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import {Card, Col, Row} from "react-bootstrap";
 
@@ -102,7 +103,7 @@ class DishesCard extends Component {
                 <Card className="border-0">
                     <Row>
                         <Col className="menu-title mt-1" xs={8}>
-                            <h3 className="product-name">- {dish.name}</h3>
+                            <h3 className="product-name text-dark">- {dish.name}</h3>
                         </Col>
                         <Col className="menu-price-logo" xs={4}>
                             <div className="menu-price text-black"><span className="menu-price-content">{dish.price}</span></div>
