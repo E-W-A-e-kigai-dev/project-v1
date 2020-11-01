@@ -20,7 +20,7 @@ class Card extends Component {
         return (
             <>
                 <div className="fries-section">
-                    <AttentionSeeker rubberBand>
+                    <AttentionSeeker effect={"rubberBand"}>
                         <div className="center col-12">
                         <SeparatorTitle title="Nos frites"/>
                         </div>
@@ -41,7 +41,7 @@ class Card extends Component {
                 </div>
                 </Fade>
                 <div className="menu-section mb-5">
-                <AttentionSeeker rubberBand>
+                <AttentionSeeker effect={"rubberBand"}>
                     <div className="center col-12">
                         <SeparatorTitle title="Nos Menus"/>
                     </div>
@@ -62,7 +62,7 @@ class Card extends Component {
                 </div>
                 </Fade>
                 <div className="dishes-section">
-                    <AttentionSeeker rubberBand>
+                    <AttentionSeeker effect={"rubberBand"}>
                     <div className="center col-12">
                         <SeparatorTitle title="Sans frites"/>
                     </div>
