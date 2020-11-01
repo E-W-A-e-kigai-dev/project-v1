@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import './Card.css';
 
@@ -18,12 +20,15 @@ class Card extends Component {
         return (
             <>
                 <div className="fries-section">
-                    <div className="center col-12">
+                    <Flip right>
+                        <div className="center col-12">
                         <SeparatorTitle title="Nos frites"/>
-                    </div>
+                        </div>
+                    </Flip>
                     <CardInfo/>
                     <FriesCard/>
                 </div>
+                <Fade>
                 <div
                     style={{
                         backgroundImage: `url(${fries_banner_bg})`,
@@ -34,13 +39,17 @@ class Card extends Component {
                     className="card-separator-banner mt-3">
 
                 </div>
+                </Fade>
                 <div className="menu-section mb-5">
+                <Flip right>
                     <div className="center col-12">
                         <SeparatorTitle title="Nos Menus"/>
                     </div>
+                </Flip>    
                     <CardInfo/>
                     <MenuCard/>
                 </div>
+                <Fade>
                 <div
                     style={{
                         backgroundImage: `url(${menus_banner_bg})`,
@@ -51,6 +60,7 @@ class Card extends Component {
                     className="card-separator-banner mt-3">
 
                 </div>
+                </Fade>
                 <div className="dishes-section">
                     <div className="center col-12">
                         <SeparatorTitle title="Sans frites"/>
