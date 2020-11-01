@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
+import {Fade, AttentionSeeker} from 'react-awesome-reveal';
+
 
 import './Card.css';
 
@@ -20,11 +20,11 @@ class Card extends Component {
         return (
             <>
                 <div className="fries-section">
-                    <Flip right>
+                    <AttentionSeeker rubberBand>
                         <div className="center col-12">
                         <SeparatorTitle title="Nos frites"/>
                         </div>
-                    </Flip>
+                    </AttentionSeeker>
                     <CardInfo/>
                     <FriesCard/>
                 </div>
@@ -41,11 +41,11 @@ class Card extends Component {
                 </div>
                 </Fade>
                 <div className="menu-section mb-5">
-                <Flip right>
+                <AttentionSeeker rubberBand>
                     <div className="center col-12">
                         <SeparatorTitle title="Nos Menus"/>
                     </div>
-                </Flip>    
+                </AttentionSeeker>    
                     <CardInfo/>
                     <MenuCard/>
                 </div>
@@ -62,9 +62,11 @@ class Card extends Component {
                 </div>
                 </Fade>
                 <div className="dishes-section">
+                    <AttentionSeeker rubberBand>
                     <div className="center col-12">
                         <SeparatorTitle title="Sans frites"/>
                     </div>
+                    </AttentionSeeker>
                     <CardInfo/>
                     <DishesCard/>
                 </div>

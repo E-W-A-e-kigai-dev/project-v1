@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Row, Col} from "react-bootstrap";
-import Flip from 'react-reveal/Flip';
+import {AttentionSeeker} from 'react-awesome-reveal';
 
 
 import './Card-info.css';
@@ -12,7 +12,7 @@ class CardInfo extends Component {
         return (
 
             <>
-                <Flip top>
+                <AttentionSeeker shakeX>
                     <div className="card mx-auto card-info mb-3">
                         <Row>
                             <Col xs={6}>
@@ -37,7 +37,7 @@ class CardInfo extends Component {
                             </Col>
                         </Row>
                     </div>
-                </Flip>
+                </AttentionSeeker>
 
             </>
         );
