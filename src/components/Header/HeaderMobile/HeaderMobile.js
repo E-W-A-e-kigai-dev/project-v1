@@ -9,6 +9,7 @@ import phone_icon from '../../../img/icones/phone-call.svg';
 import down_arrow from '../../../img/icones/down-arrow.svg';
 
 class HeaderMobile extends Component {
+
     render() {
         return (
             <>
@@ -23,6 +24,9 @@ class HeaderMobile extends Component {
                         }}
                         className="mobile-header-background">
                         <Row>
+                            <div className="header-mobile-title col-12 mt-2 center">
+                                <h1 className="text-center mx-auto">{this.props.title}</h1>
+                            </div>
                             <JackInTheBox>
                                 <div className="center mx-auto btn btn-call">
                                     <a className="link-call text-white" title="lien pour appeler ab-ramonage" href="tel:+33650176772">COMMANDER<img className="icon-phone ml-3" src={phone_icon} alt="telephoner"/></a>

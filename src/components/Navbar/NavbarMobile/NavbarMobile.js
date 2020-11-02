@@ -19,7 +19,7 @@ class NavbarMobile extends Component {
                 <Navbar className="p-0 top-bar-mobile" sticky="top">
                     <Col xs={8} className="">
                         <Navbar.Brand as={Link} to="/">
-                            <img className="nav-mobile-logo w-50" src={logo} alt="french fries logo"/>
+                            <img className="nav-mobile-logo w-50 p-1" src={logo} alt="french fries logo"/>
                         </Navbar.Brand>
 
                     </Col>

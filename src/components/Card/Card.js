@@ -12,13 +12,20 @@ import menus_banner_bg from '../../img/images/menus-card-bg.jpg';
 import DishesCard from "./DishesCard/DishesCard";
 import ContactForm from "../Contact/ContactForm/ContactForm";
 import SeparatorTitle from "../SeparatorTitle/SeparatorTitle";
+import NavbarMobile from "../Navbar/NavbarMobile/NavbarMobile";
+import NavbarDesktop from "../Navbar/NavbarDesktop/NavbarDesktop";
+import HeaderMobile from "../Header/HeaderMobile/HeaderMobile";
+import HeaderDesktop from "../Header/HeaderDesktop/HeaderDesktop";
 
 class Card extends Component {
 
 
     render() {
+        const isMobile = window.innerWidth <= 768;
         return (
             <>
+                {isMobile ? <NavbarMobile/>: <NavbarDesktop/>}
+                {isMobile ? <HeaderMobile title={'La Carte'}/> : <HeaderDesktop/>}
                 <div className="fries-section">
                     <AttentionSeeker effect={"rubberBand"}>
                         <div className="center col-12">

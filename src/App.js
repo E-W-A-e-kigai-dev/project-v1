@@ -45,8 +45,6 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    {isMobile ? <NavbarMobile/>: <NavbarDesktop/>}
-                    {isMobile ? <HeaderMobile/> : <HeaderDesktop/>}
                     <Switch>
                         <Route exact path="/carte" component={Card}/>
                         <Route exact path="/apropos" component={About} />

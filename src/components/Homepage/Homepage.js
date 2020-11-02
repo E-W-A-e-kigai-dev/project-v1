@@ -10,14 +10,21 @@ import banner_bg from '../../img/background/separator-homepage-bg.jpg';
 import shop_front from '../../img/images/front.jpg';
 import find from '../../img/images/find.png';
 import ContactForm from "../Contact/ContactForm/ContactForm";
+import NavbarMobile from "../Navbar/NavbarMobile/NavbarMobile";
+import NavbarDesktop from "../Navbar/NavbarDesktop/NavbarDesktop";
+import HeaderMobile from "../Header/HeaderMobile/HeaderMobile";
+import HeaderDesktop from "../Header/HeaderDesktop/HeaderDesktop";
 
 class Homepage extends Component {
     componentDidMount() {
         window.scrollTo(0,0);
     }
     render() {
+        const isMobile = window.innerWidth <= 768;
         return (
             <>
+                {isMobile ? <NavbarMobile/>: <NavbarDesktop/>}
+                {isMobile ? <HeaderMobile title={'Accueil'}/> : <HeaderDesktop/>}
                 <Row className="homepage-presentation-section container-fluid mt-5">
                     <Col xs={2} xl={3} className="left-quotes">
                         <img className="icon-quote icon-quote-left" src={left_quote} alt="guillemets gauche"/>

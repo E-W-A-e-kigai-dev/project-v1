@@ -15,6 +15,10 @@ import about_separator_bg from '../../img/images/about-separator-bg.jpg';
 import fb_publi_one from '../../img/images/facebook-1.jpg';
 import left_arrow from '../../img/images/left-chevron.svg';
 import right_arrow from '../../img/images/right-chevron.svg';
+import NavbarMobile from "../Navbar/NavbarMobile/NavbarMobile";
+import NavbarDesktop from "../Navbar/NavbarDesktop/NavbarDesktop";
+import HeaderMobile from "../Header/HeaderMobile/HeaderMobile";
+import HeaderDesktop from "../Header/HeaderDesktop/HeaderDesktop";
 
 
 
@@ -52,8 +56,11 @@ class About extends Component {
     };
 
     render() {
+        const isMobile = window.innerWidth <= 768;
         return (
             <>
+                {isMobile ? <NavbarMobile/>: <NavbarDesktop/>}
+                {isMobile ? <HeaderMobile title={'A propos'}/> : <HeaderDesktop/>}
                 <div className="about-presentation mt-3">
                     <Row className="center">
                         <Col className="center" xs={12}>
