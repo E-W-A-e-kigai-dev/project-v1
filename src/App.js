@@ -6,10 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
-import NavbarDesktop from "./components/Navbar/NavbarDesktop/NavbarDesktop";
-import NavbarMobile from "./components/Navbar/NavbarMobile/NavbarMobile";
-import HeaderDesktop from "./components/Header/HeaderDesktop/HeaderDesktop";
-import HeaderMobile from "./components/Header/HeaderMobile/HeaderMobile";
+
 import Card from "./components/Card/Card";
 import About from "./components/About/About";
 import Homepage from "./components/Homepage/Homepage";
