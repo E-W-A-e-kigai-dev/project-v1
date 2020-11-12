@@ -25,7 +25,7 @@ class HeaderMobile extends Component {
                         className="mobile-header-background">
                         <Row>
                             <div className="header-mobile-title col-12 mt-2 center">
-                                <h1 className="text-center mx-auto">{this.props.title}</h1>
+                                <h1 className="text-center display-2 mx-auto pt-5 text-white">{this.props.title}</h1>
                             </div>
                             <JackInTheBox>
                                 <div className="center mx-auto btn btn-call">
