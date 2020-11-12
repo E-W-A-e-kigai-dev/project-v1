@@ -22,7 +22,7 @@
 .down-icon {
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 2s infinite  alternate;
-    
+    margin-top: 25%;
     width: 15%;
 }
 @-webkit-keyframes mover {

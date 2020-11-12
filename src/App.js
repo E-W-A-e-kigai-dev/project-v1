@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {toast, ToastContainer} from "react-toastify";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
 
@@ -51,6 +52,7 @@ class App extends Component {
                     </Switch>
                     {isMobile ? <FooterMobile/> : <FooterDesktop/>}
                 </div>
+                <ToastContainer position={toast.POSITION.TOP_RIGHT} autoClose={3000}/>
             </Router>
         );
     }
