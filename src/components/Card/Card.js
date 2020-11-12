@@ -19,6 +19,9 @@ import HeaderDesktop from "../Header/HeaderDesktop/HeaderDesktop";
 
 class Card extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
 
     render() {
         const isMobile = window.innerWidth <= 768;

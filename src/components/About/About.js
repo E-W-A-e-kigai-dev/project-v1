@@ -33,6 +33,10 @@ class About extends Component {
         };
     }
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     next = () => {
         this.setState((state) => ({
             currentSlide: state.currentSlide + 1,
