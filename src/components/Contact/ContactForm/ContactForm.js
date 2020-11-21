@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Col, Row} from "react-bootstrap";
+import {Redirect} from 'react-router-dom';
 import{ init } from 'emailjs-com';
 import * as emailjs from "emailjs-com";
 import {MAIL_CONTACT_KEY, CONTACT_TEMPLATE_ID, MAIL_SERVICE_ID } from '../../../config';
@@ -14,6 +15,11 @@ const ContactForm = ({history})=> {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
+    const [redirect, setRedirect] = useState(false);
+
+    if(redirect){
+        return <Redirect to="/" push />
+    }
 
     const isEmail = () =>{
         let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -49,7 +55,7 @@ const ContactForm = ({history})=> {
                 setName("");
                 setEmail("");
                 setMessage("");
-                history.replace("/");
+                setRedirect(true);
             })
             .catch(
                 (err) =>
