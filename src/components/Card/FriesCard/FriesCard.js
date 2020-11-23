@@ -26,7 +26,7 @@ class FriesCard extends Component {
             },
             {
                 id: 3,
-                name: 'Frites aux oigons grillés',
+                name: 'Frites aux oignons grillés',
                 lowPrice: '3€',
                 mediumPrice: '3€50',
                 highPrice: '4€'

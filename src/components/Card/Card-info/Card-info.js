@@ -18,7 +18,7 @@ class CardInfo extends Component {
                             <Col xs={6}>
                                 <h4 className="sauce-title"><u>Nos sauces :</u></h4>
                                 <p className="sauces-content">
-                                    Ketchup, Mayonnaise, Samuraï, Andalouse, Barbecue, Burger, Ranch, Moutarde
+                                    Ketchup, Mayonnaise, Samouraï, Andalouse, Barbecue, Burger, Ranch, Moutarde
                                 </p>
                             </Col>
                             <Col className="p-0" xs={6}>

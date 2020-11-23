@@ -11,14 +11,14 @@ class MenuCard extends Component {
                 id: 1,
                 name: 'Menu petite faim',
                 contentType: 'Au choix',
-                content: 'Saucisse, Merguez, Steack haché, Poulet, Pull Pork',
+                content: 'Saucisse, Merguez, Steak haché, Poulet, Pull Pork',
                 price: '6€50'
             },
             {
                 id: 2,
                 name: 'Menu American',
                 contentType: 'Au choix',
-                content: 'Saucisse, Merguez, Steack haché, Poulet, Pull Pork',
+                content: 'Saucisse, Merguez, Steak haché, Poulet, Pull Pork',
                 price: '7€50'
             },
             {
@@ -39,7 +39,7 @@ class MenuCard extends Component {
                 id: 5,
                 name: 'Menu Carnivore',
                 contentType: 'Inclus',
-                content: 'Pull Pork 350 gr, Steack haché 180 gr, Poulet rôti 180 gr, Bacon 2 tranches',
+                content: 'Pull Pork 350 gr, Steak haché 180 gr, Poulet rôti 180 gr, Bacon 2 tranches',
                 price: '12€'
             },
             {
